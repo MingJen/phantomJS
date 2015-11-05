@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "663de217df2e38988a1e49a194089467",
-    "content-hash": "3c409f62f9c2d8af461e9c768b29bd86",
+    "hash": "0e11221ae03e51b3bfb11e13405e3328",
+    "content-hash": "ab56b37382014c75f78a2ed8fd3cafe5",
     "packages": [
         {
             "name": "behat/mink",
@@ -1269,7 +1269,101 @@
             "time": "2015-10-11 09:39:48"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "goez/mink-page-objects",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jaceju/mink-page-objects.git",
+                "reference": "e2364924a4c69e756fb21b0c40951c481a7052c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jaceju/mink-page-objects/zipball/e2364924a4c69e756fb21b0c40951c481a7052c2",
+                "reference": "e2364924a4c69e756fb21b0c40951c481a7052c2",
+                "shasum": ""
+            },
+            "require": {
+                "behat/mink": "^1.7",
+                "peridot-php/leo": "~1.0"
+            },
+            "require-dev": {
+                "behat/mink-selenium2-driver": "^1.3",
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": ">=4.0"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Goez\\PageObjects\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jace Ju",
+                    "email": "jaceju@gmail.com"
+                }
+            ],
+            "description": "Implementation of Page Objects Pattern for Mink ",
+            "time": "2015-11-04 11:47:12"
+        },
+        {
+            "name": "peridot-php/leo",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/peridot-php/leo.git",
+                "reference": "c05800425c264a6ac72fefb803fd98e9bf8d2073"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/peridot-php/leo/zipball/c05800425c264a6ac72fefb803fd98e9bf8d2073",
+                "reference": "c05800425c264a6ac72fefb803fd98e9bf8d2073",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "peridot-php/peridot-jumpstart": "~1.0",
+                "peridot-php/peridot-prophecy-plugin": "~1.0",
+                "satooshi/php-coveralls": "~0.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Peridot\\Leo\\": "src/"
+                },
+                "files": [
+                    "src/Interfaces/_interface.bdd.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Scaturro",
+                    "email": "scaturrob@gmail.com"
+                }
+            ],
+            "description": "Next level assertion and matcher library for PHP",
+            "keywords": [
+                "assert",
+                "expect",
+                "expectation",
+                "matcher",
+                "testing"
+            ],
+            "time": "2015-02-20 17:50:42"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
